@@ -1,0 +1,20 @@
+.divGrid {
+  color: white;
+  border: 1px solid black;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  padding:0px;
+  margin:0px;
+}
+
+.divGrid:hover {
+  background-color: black;
+}
+
+.container {
+  background-color: lightgray;
+  width: 70em;
+  height: auto;
+  
+}
