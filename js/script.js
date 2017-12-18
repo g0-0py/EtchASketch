@@ -1,20 +1,20 @@
 function createGrid(gridSize) {
-  let divNumber = 0;
-  const container = document.getElementById('grid-container');
-  
-  //logic to set grid element size
-  pixelSize = (600/gridSize-3).toString() + "px"
+  let divNumber = 1;
+  const container = document.querySelector(".container")
+  container.style.setProperty("grid-template-rows", 'repeat(${gridSize}, 1fr)');
+  container.style.setProperty("grid-template-columns", 'repeat(${gridSize}, 1fr)');
 
-  for(let i = gridSize**2; i > 0; i--) {
-    newPixel(pixelSize)
+
+  
+  for (let i = gridSize ** 2; i > 0; i--) {
+    newPixel()
   }
 
+
   function newPixel(pixelSize) {
-    var newPixel = document.createElement('div')
+    const newPixel = document.createElement('div')
     newPixel.setAttribute('id', divNumber)
     newPixel.setAttribute('class', "divGrid")
-    newPixel.style.height = pixelSize
-    newPixel.style.width = pixelSize
     container.appendChild(newPixel)
     divNumber++
 
