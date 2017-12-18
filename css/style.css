@@ -1,9 +1,9 @@
 .divGrid {
   color: white;
   border: 1px solid black;
-  display: inline-block;
+  justify-content: space-around;
   padding:0px;
-  margin:1px;
+  margin:0px;
 }
 
 .divGrid:hover {
@@ -16,7 +16,7 @@
   height: 600px;
   
   display: flex;
-  flex-flow: row;
+ 
   flex-wrap: wrap;
 
   overflow: hidden;
