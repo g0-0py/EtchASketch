@@ -6,17 +6,20 @@
 }
 
 .divGrid:hover {
-  background-color: black;
+  --userColor: #EFC30F;
+  background-color: --userColor;
+
 }
 
 .container {
+  --gridSize: 16;
   background-color: lightgray;
   width: 600px;
   height: 600px;
   
   display: grid;
   grid-gap: 1px;
-
+  
   grid-template-columns: repeat(var(--gridSize), 1fr);
   grid-template-rows: repeat(var(--gridSize), 1fr);
 

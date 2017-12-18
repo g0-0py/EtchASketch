@@ -1,8 +1,8 @@
 function createGrid(gridSize) {
-  let divNumber = 1;
+  let pixelNumber = 1;
   const container = document.querySelector(".container")
-  container.style.setProperty("grid-template-rows", 'repeat(${gridSize}, 1fr)');
-  container.style.setProperty("grid-template-columns", 'repeat(${gridSize}, 1fr)');
+  
+  container.style.setProperty("--gridSize", gridSize);
 
 
   
@@ -13,10 +13,10 @@ function createGrid(gridSize) {
 
   function newPixel(pixelSize) {
     const newPixel = document.createElement('div')
-    newPixel.setAttribute('id', divNumber)
+    newPixel.setAttribute('id', pixelNumber)
     newPixel.setAttribute('class', "divGrid")
     container.appendChild(newPixel)
-    divNumber++
+    pixelNumber++
 
     newPixel.addEventListener('mouseover', function(event) {
       event.target.style.background = 'black';
@@ -31,3 +31,4 @@ function destroyGrid() {
     container.removeChild(container.firstChild);
   }
 }
+
