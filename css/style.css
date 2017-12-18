@@ -14,5 +14,11 @@
   background-color: lightgray;
   width: 600px;
   height: 600px;
-   
+  
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+  
 }
