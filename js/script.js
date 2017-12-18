@@ -12,12 +12,12 @@ function createGrid() {
   const container = document.getElementById('gridContainer');
   const gridSize = (document.getElementById('sizeChoice').value)
 
+  if(container.innerHTML != ""){container.innerHTML = "";}
+  
   container.style.setProperty("--gridSize", gridSize);
-
+  container.style.setProperty("--gridGap", gridSize < 41 ? "1px" : 0);
   //This'll clear our grid if the user resets it
-  if(container.innerHTML != ""){
-    container.innerHTML = "";
-  }
+  
   
   for (let i = gridSize ** 2; i > 0; i--) {
     newPixel()
@@ -38,8 +38,3 @@ function createGrid() {
     });
   }
 }
-
-function destroyGrid() {
-  
-}
-

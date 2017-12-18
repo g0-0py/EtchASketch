@@ -24,7 +24,7 @@
 
 .divGrid {
   color: white;
-  border: 1px solid black;
+  border: 1px solid darkgray;
   padding:0px;
   margin:0px;
 }
@@ -37,13 +37,14 @@
 
 .container {
   --gridSize: 16;
+  --gridGap: 1px;
+  
   background-color: lightgray;
   width: 600px;
   height: 600px;
   
   display: grid;
-  grid-gap: 1px;
-  
+  grid-gap: var(--gridGap);
   grid-template-columns: repeat(var(--gridSize), 1fr);
   grid-template-rows: repeat(var(--gridSize), 1fr);
 
