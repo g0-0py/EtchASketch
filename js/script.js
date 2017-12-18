@@ -1,5 +1,11 @@
+this.onLoad(createGrid(16))
+
 const gridButton = document.getElementById('gridButton');
-gridButton.addEventListener('mouseover', function(event) {});
+
+gridButton.addEventListener('mouseover', function(event) {
+
+});
+
 
 function createGrid(gridSize) {
   let pixelNumber = 1;
@@ -27,7 +33,9 @@ function createGrid(gridSize) {
     pixelNumber++
 
     newPixel.addEventListener('mouseover', function(event) {
-      event.target.style.background = 'black';
+      const userColor = document.getElementById('colorChoice');
+      event.target.style.background = userColor.value;
+
     });
   }
 }
