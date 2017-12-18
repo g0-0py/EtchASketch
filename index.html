@@ -9,12 +9,11 @@
   </head>
 
   <body>
-    <button onClick="createGrid(16)">Grid</button>
-    <button onClick="destroyGrid()">Destroy</button>
+    <button class="gridButton" onClick="createGrid(16)">Reset</button>
 
-    <div id="grid-container" class="container"></div>
+    <div id="gridContainer" class="container"></div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" onload"createGrid(16)"></script>
   </body>
 
 </html>

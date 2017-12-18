@@ -1,8 +1,16 @@
+const gridButton = document.getElementById('gridButton');
+gridButton.addEventListener('mouseover', function(event) {});
+
 function createGrid(gridSize) {
   let pixelNumber = 1;
-  const container = document.querySelector(".container")
-  
+  const container = document.getElementById('gridContainer');
   container.style.setProperty("--gridSize", gridSize);
+
+  //This'll clear our grid if the user resets it
+  if(container.innerHTML != ""){
+    container.innerHTML = "";
+  }
+  
 
 
   
@@ -25,10 +33,6 @@ function createGrid(gridSize) {
 }
 
 function destroyGrid() {
-  const container = document.getElementById('grid-container');
-
-  while(container.firstchild != 'null') {
-    container.removeChild(container.firstChild);
-  }
+  
 }
 

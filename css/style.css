@@ -24,4 +24,12 @@
   grid-template-rows: repeat(var(--gridSize), 1fr);
 
 } 
-  
+
+.gridButton {
+  padding: 10px;
+  margin: 15px 30px 20px 30px;
+}
+
+.gridButton:hover {
+  color: red;
+}
