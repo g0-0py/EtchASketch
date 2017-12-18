@@ -9,9 +9,11 @@
   </head>
 
   <body>
-    <button class="gridButton" onClick="createGrid(16)">Reset</button>
-    
-    <input id="colorChoice" type="color"></input>
+    <div id="controls">
+      <button class="gridButton" onClick="createGrid()">Reset</button>
+      <input id="sizeChoice" type="number" value="16"></input>
+      <input id="colorChoice" type="color"></input>
+    </div>
     
     <div id="gridContainer" class="container"></div>
 
