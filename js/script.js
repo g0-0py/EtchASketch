@@ -1,16 +1,12 @@
 this.onLoad(createGrid())
 
 const gridButton = document.getElementById('gridButton');
-
-gridButton.addEventListener('mouseover', function(event) {
-
-});
-
+gridButton.addEventListener('mouseover', function(event) {});
 
 function createGrid() {
   let pixelNumber = 1;
   const container = document.getElementById('gridContainer');
-  const gridSize = (document.getElementById('sizeChoice').value)
+  const gridSize = (document.getElementById('sizeOpt').value)
   if(gridSize > 99) {alert("This hasn't been tested with grid sizes above 100. You're entering uncharted territory");}
 
   if(container.innerHTML != ""){container.innerHTML = "";}
@@ -40,3 +36,17 @@ function createGrid() {
     });
   }
 }
+
+/* Event listener to toggle pixel border. May enable this at some point.
+
+const borderToggle = document.getElementById('borderToggle');
+borderToggle.addEventListener('click', function(event) {
+  const divGrid = document.getElementsByClassName('divGrid');
+  if(borderToggle.checked == false) {
+    divGrid.style.setProperty("border", 'none');
+    } else if (bordertoggle.checked == true) {
+    divGrid.style.setProperty("border", '1px solid darkgray');
+    }
+});
+
+*/

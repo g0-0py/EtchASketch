@@ -17,10 +17,20 @@
   margin: 0px;
 }
 
-#sizeChoice {
+#colorOpt input {
+  height: 40px;
+}
+
+#colorOpt p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#sizeOpt {
   width: 45px;
   margin-bottom: 10px;
 }
+
 
 .divGrid {
   color: white;

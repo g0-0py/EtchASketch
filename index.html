@@ -13,11 +13,19 @@
       <h3>Grid Controls</h3>
       <button class="gridButton" onClick="createGrid()">Reset</button>
       <div id="sizeController">
-        <p>Grid Size</p>
-        <input id="sizeChoice" type="number" value="16"></input>
+        <p>Grid Size:</p>
+        <input id="sizeOpt" type="number" value="16"></input>
       </div>
-      
-      <input id="colorChoice" type="color"></input>
+      <div id="colorOpt">
+        <p>Color:</p>
+        <input id="colorChoice" type="color"></input>
+      </div>
+      <!--
+      <div id="miscOptions">
+        <p>pixel border</p>
+        <input type="checkbox" id="borderToggle" value="true"></input>
+      </div>
+      -->
     </div>
     
     <div id="gridContainer" class="container"></div>
