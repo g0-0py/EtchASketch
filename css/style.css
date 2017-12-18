@@ -1,9 +1,25 @@
 #controls {
+  width: 5.5em;
+  float: left;
+  background-color: lightgray;
+  height: 600px;
+  margin-right: 30px;
+  text-align: center;
+  border: 3px solid black;
+}
 
+#controls h3 {
+  padding-bottom: 6px;
+  border-bottom: 3px solid black;
+}
+
+#sizeController p {
+  margin: 0px;
 }
 
 #sizeChoice {
   width: 45px;
+  margin-bottom: 10px;
 }
 
 .divGrid {
@@ -35,7 +51,7 @@
 
 .gridButton {
   padding: 10px;
-  margin: 15px 30px 20px 30px;
+  margin: 5px 5px 5px 5px;
 }
 
 .gridButton:hover {
